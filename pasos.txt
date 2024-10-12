@@ -1,0 +1,24 @@
+1.- crear entorno virtual
+ ->  py.exe -m venv venv
+2.- activar el entorno virtual 
+3.- instalar los package / librerías / dependencias
+ -> Django 5.1.2
+python -m pip install Django
+4.- Crear un nuevo proyecto con Django
+django-admin startproject ejemplo2
+5.- nos tenemos que posicionar en la carpeta del proyecto (tener visible manage.py)
+-> cd .\ejemplo2\
+6.- Crear las migraciones
+-> python .\manage.py migrate
+7.- levantar servidor y verificar el correcto funcionamiento de la app
+python manage.py runserver
+8.- en settings.py agregar el directorio de templates
+-> 'DIRS': ['templates']
+9.- salir del entorno virtual
+-> deactivate
+
+10.- crear archivo requirements.txt
+pip freeze > requirements.txt 
+
+11.- crear nuevo entorno virtual e instalar las dependencias que utiliza el proyecto
+pip install –r requirements.txt 
