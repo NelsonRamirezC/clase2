@@ -24,3 +24,6 @@ urlpatterns = [
     path('contacto/', views.contacto, name="contacto"),
     path('reclamos/', views.reclamos, name="reclamos"),
 ]
+
+
+# DELEGACIÓN DE RUTAS -> APP
