@@ -6,3 +6,6 @@ def home(request):
 
 def contacto(request):
     return render(request, 'contacto.html', {})
+
+def reclamos(request):
+    return render(request, 'reclamos.html', {})

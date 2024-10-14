@@ -1,0 +1,22 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block titulo %}Reclamos{% endblock  %}
+
+{% block  carga_estaticos %}
+    <link rel="stylesheet" href="{% static "css/reclamos/styles.css" %}">
+{% endblock  %}
+
+{% block contenido %}
+
+<header class="py-5">
+    <h1 class="text-center">Página de reclamos</h1>
+</header>
+
+<main class="container">
+    <section class="py-5">
+        <h2 class="text-center">Deja aquí tu reclamo!</h2>
+    </section>
+</main>
+
+{% endblock  %}
