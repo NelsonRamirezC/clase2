@@ -4,7 +4,6 @@ from django.http import HttpResponse
 def home(request):
     contexto = {
         "titulo": "Bienvenidos a nuestra web",
-        
     }
     return render(request, 'home.html', contexto)
 
